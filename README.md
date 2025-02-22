@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧠 NeuroLingo - AI Mock Interviewing Platform 🌐
 
-## Getting Started
+**NeuroLingo** is an advanced AI-powered mock interviewing platform designed to revolutionize interview preparation. With real-time feedback, multilingual support, and intelligent analysis, users can confidently practice for interviews, regardless of language or background.
 
-First, run the development server:
+## 🚀 Key Features
+
+- 🎙️ **AI-Powered Mock Interviews:** Realistic interview simulations powered by Google Gemini AI.
+- 🌍 **Multilingual Support:** Practice interviews in multiple languages.
+- 📝 **Real-Time Feedback:** Instant AI-driven feedback on clarity, structure, and relevance.
+- 🎥 **Video & Audio Support:** Record responses via audio or video for immersive practice.
+- 🔍 **Customizable Interview Sets:** Select questions based on job roles, industries, and skill levels.
+- 📊 **Performance Insights:** Detailed analytics and improvement suggestions.
+
+---
+
+## ⚙️ Tech Stack
+
+- **Frontend:** Next.js 14, TypeScript, Tailwind CSS
+- **Backend:** Node.js, Express.js
+- **Video Calling:** React Webcam
+- **AI Models:** Google Generative AI (Gemini 1.5 flash)
+- **Database:** postgreSQL
+- **Authentication:** Clerk
+
+---
+
+## 📦 Installation
+
+### 1. **Clone the Repository**
+
+```bash
+git clone https://github.com/prajapatishivam65/neurolingofinal.git
+cd neurolingo
+```
+
+### 2. **Install Dependencies**
+
+```bash
+npm install
+# or
+yarn install
+```
+
+### 3. **Set Up Environment Variables**
+
+Create a `.env` file in the root directory and add:
+
+```
+env
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
+CLERK_SECRET_KEY=sk_test_
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+NEXT_PUBLIC_DRIZZLE_DB_URL
+GEMINI_API_KEY
+NEXT_PUBLIC_ASSEMBLYAI_API_KEY
+```
+
+### 4. **Run the Development Server**
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) to access the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🤝 Contributing
 
-## Learn More
+1. Fork the repository.
+2. Create a feature branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a pull request.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛡️ License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## This project is licensed under the [MIT License](LICENSE)
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🚀 **Prepare smarter, interview better, and succeed with NeuroLingo!** 🧠💼
